@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
 
+.logo {
+
+width: 200px;
+padding: 30px;
+
+}
+
 *, body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
@@ -15,7 +22,7 @@ html, body {
     height: 100%;
     background-color: #152733;
     overflow: hidden;
-    background-image: url("https://smcdigital.com.ar/formtomc/images/backnt.jpg");
+    background-image: url("images/backnt.jpg"); /*Replace with your background Image 2400x1600px */
     background-position: center;
     background-size: cover;
 }
@@ -50,14 +57,15 @@ html, body {
     padding: 40px;
     display: inline-block;
     width: 100%;
-    min-width: 410px;
+    min-width: 310px;
+    max-width: 410px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     text-align: left;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-color: #393939;opacity:0.9;
+    background-color: #393939;opacity:0.9; /*form background color here */
 }
 
 .form-content h3 {
@@ -106,7 +114,7 @@ html, body {
 .btn-primary{
     background-color: #393939;
     outline: none;
-    border: 2px solid #6ccdf0;
+    border: 2px solid #6ccdf0; /*submit botton border color*/
     box-shadow: none;
     color: #ffffff;
     padding: 5px 40px;
@@ -119,35 +127,7 @@ html, body {
      box-shadow: none;
 }
 
-.form-content textarea {
-    position: static !important;
-    width: 100%;
-    padding: 8px 20px;
-    border-radius: 6px;
-    text-align: left;
-    background-color: #fff;
-    border: 0;
-    font-size: 15px;
-    font-weight: 300;
-    color: #8D8D8D;
-    outline: none;
-    resize: none;
-    height: 120px;
-    -webkit-transition: none;
-    transition: none;
-    margin-bottom: 14px;
-}
 
-.form-content textarea:hover, .form-content textarea:focus {
-    border: 0;
-    background-color: #ebeff8;
-    color: #8D8D8D;
-}
-
-.mv-up{
-    margin-top: -9px !important;
-    margin-bottom: 8px !important;
-}
 
 .invalid-feedback{
     color: #ff606e;
